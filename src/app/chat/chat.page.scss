@@ -1,0 +1,80 @@
+ion-header{
+    ion-toolbar{
+        --background:var(--color-primary);
+        --color:var(--color-grey);
+        text-align: center;
+        ion-avatar{
+            width: 40px;
+            height: 40px;
+            margin-right: 16px;
+        }
+    }
+}
+
+ion-content{
+     --background: url("./fondo5.jpg");
+    
+    .mimensaje{
+        padding: 0;
+        margin: 0;
+        margin:8px 8px;
+        font-size: 16px;
+        border-radius: 5px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        p{
+            margin: 0;
+            color: #282828;
+            padding: 4px 8px;
+            border-radius: 5px 5px 0px 5px;
+            margin-right: 8px;
+            width: fit-content;
+            margin-right: 0%;
+            background-color: rgba(1, 247, 1, 0.349);
+        }
+        .time{
+            font-size: 12px;
+            border-radius: 0px 0px 5px 5px;
+        }
+    }
+    .otro{
+        padding: 0;
+        margin: 0;
+        margin:8px 8px;
+        font-size: 16px;
+        border-radius: 5px;
+        p{
+            margin: 0;
+            color: #282828;
+            padding: 4px 8px;
+            border-radius: 5px 5px 5px 0px;
+            margin-right: 8px;
+            width: fit-content;
+            margin-right: 0%;
+            background-color: rgba(105, 134, 250, 0.473);
+        }
+        .time{
+            font-size: 12px;
+            border-radius: 0px 0px 5px 5px;
+        }
+        
+    }
+}
+
+ion-footer{
+    ion-toolbar{
+        ion-row{
+            ion-input{
+                border-radius: 5px;
+                border: 1px solid rgba(153, 153, 153, 0.384);
+                margin: 0 0 0 8px ;
+            }
+            ion-icon{
+                font-size: 40px;
+                margin:0 8px;
+                color:var(--color-primary)
+            }
+        }
+    }
+}

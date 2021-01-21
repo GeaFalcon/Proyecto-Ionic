@@ -1,0 +1,42 @@
+@import '../../theme/variables.scss';
+
+ion-header{
+    ion-toolbar{
+        --background:var(--color-primary);
+        color:var(--color-grey);
+        text-align: center;
+        ion-icon{
+            color:var(--color-success);
+            font-size: 32px;
+            margin-right: 16px;
+        }
+    }
+}
+
+ion-content{
+    --background:var(--color-grey);
+    text-align: center;
+    ion-avatar{
+        margin: auto;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+        border: 2px solid var(--color-primary);
+        width:100% !important;
+        height : 100% !important;
+        max-width: 128px !important;
+        max-height: 128px !important;
+    }
+    ion-button{
+        margin-bottom: 3vh;
+        --background:var(--color-primary);
+        --color:var(--color-grey);
+    }
+    ion-item{
+        --background:var(--color-grey);
+        margin-bottom: 3vh;
+        ion-input{
+            --color:var(--color-primary);
+           
+        }
+    }
+}

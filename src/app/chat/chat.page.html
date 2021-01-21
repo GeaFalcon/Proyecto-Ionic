@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button defaultHref="chat-general" slot="start"></ion-back-button>
+    <ion-title>Chat</ion-title>
+    <ion-avatar slot="end" [routerLink]="['/perfil']">
+      <img
+        src="{{usuario.foto}}">
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollEvents]="true" #content>
+
+    <ion-text class="timer" *ngFor="let item of chat">
+      <div *ngIf="item.usuario_realiza==id;else esFalse" class="mimensaje">
+        <p>{{item.mensaje}}</p>
+        <p class="time">{{item.date}}</p>
+      </div>
+      <ng-template #esFalse>
+        <div class="otro">
+          <p>{{item.mensaje}}</p>
+          <p class="time">{{item.date}}</p>
+        </div>
+      </ng-template>
+    </ion-text>
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-input #texto></ion-input>
+      <ion-icon name="paper-plane" (click)="enviarChat(texto.value)"></ion-icon>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

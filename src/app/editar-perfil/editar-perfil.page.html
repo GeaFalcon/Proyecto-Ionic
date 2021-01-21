@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button defaultHref="perfil" slot="start"></ion-back-button>
+    <ion-title>Editar perfil</ion-title>
+    <ion-icon name="checkmark-outline" slot="end" (click)="presentAlertConfirm()"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-avatar>
+    <img src="{{usuario.foto}}">
+  </ion-avatar>
+
+  <ion-button shape="round">Cambiar foto de perfil</ion-button>
+
+  <ion-item>
+    <ion-label position="floating">Nickname</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input  type="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Ciudad</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Nueva contraseña</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Repetir nueva contraseña</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+</ion-content>

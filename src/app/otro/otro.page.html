@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar *ngFor="let item of usuario">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button> 
+    </ion-buttons>      
+    <ion-title>{{item.nick}}</ion-title>
+    <ion-avatar slot="end" [routerLink]="['/perfil']">
+      <img src="{{usuarioLog.foto}}" alt="">
+    </ion-avatar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngFor="let item of usuario">
+    <ion-avatar class="foto">
+      <img
+      src="{{item.foto}}"
+      alt=""/>
+    </ion-avatar> 
+  
+  <ion-icon name="star-outline"></ion-icon
+  ><ion-icon name="star-outline"></ion-icon
+  ><ion-icon name="star-outline"></ion-icon
+  ><ion-icon name="star-outline"></ion-icon
+  ><ion-icon name="star-outline"></ion-icon>
+  <p class="vive">{{item.lugar}}</p>
+  <hr />
+  <p class="productos">Productos subidos</p>
+
+  <ion-row *ngFor="let i of articulos" (click)="verArticulo(i.articulo_id)">
+    <img
+      src="{{i.imagen}}"
+      alt=""
+    />
+    <div class="texto">
+      <p>
+        {{i.descripcion}}
+      </p>
+    </div>
+    <!-- <ion-col size="12"> </ion-col> -->
+  </ion-row>
+  
+</ion-content>
